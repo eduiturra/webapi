@@ -42,7 +42,8 @@ steps:
     script: 'docker login -u "eduiturra" -p "Amanda.2014"'
 - task: Docker@2
   inputs:
-    repository: 'eduiturra/webapi:latest'
+    repository: 'eduiturra/webapi'
+    tags: 'latest'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     
