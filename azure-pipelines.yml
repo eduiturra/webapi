@@ -36,3 +36,8 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+- task: Docker@2
+  inputs:
+    repository: 'eduiturra/webapi'
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
