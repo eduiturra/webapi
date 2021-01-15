@@ -41,7 +41,7 @@ steps:
     command: 'login'
 - task: Docker@2
   inputs:
-    repository: 'eduiturra/webapi'
+    repository: 'eduiturra/webapi:latest'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
     
