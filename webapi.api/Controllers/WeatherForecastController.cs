@@ -9,7 +9,7 @@ namespace webapi.api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class cController : ControllerBase
+    public class WeatherForecastController : ControllerBase
     {
 
         private readonly ILogger<WeatherForecastController> _logger;
